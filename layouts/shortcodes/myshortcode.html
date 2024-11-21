@@ -1,0 +1,4 @@
+<myshortcode>
+  {{- $u := urls.Parse (.Get "var") -}} {{- $var := $u.String -}} {{- if not $u.IsAbs -}} {{- with or (.Page.Resources.Get $u.Path) (resources.Get $u.Path) -}} {{- $var = .RelPermalink -}} {{- end -}} {{- end -}}
+  <div>This is some <b>HTML</b>, and a new line with a "quoted string" and var {{ $var }} .</div>
+</myshortcode>
