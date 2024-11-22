@@ -1,0 +1,8 @@
+{{ define "main" }}
+  Cutom list
+  {{ .Content }}
+  {{ range (where .Site.RegularPages "Section" "dir1") }}
+    {{ .Content }}
+  {{ end }}
+
+{{ end }}
