@@ -1,6 +1,23 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://localhost/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'ga-hugo-theme'
+title = 'anJ New Hugo Site'
+
 [taxonomies]
   mood = "moods"
+
+[menu]
+  [[menu.mainmenu]]
+    identifier = "homepage"
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.mainmenu]]
+    identifier = "products"
+    name = 'Products'
+    url = '/products/'
+    weight = 20
+  [[menu.mainmenu]]
+    identifier = "posts"
+    name = 'Posts'
+    url = '/posts/'
+    weight = 30

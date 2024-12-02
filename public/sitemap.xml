@@ -2,19 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/b/</loc>
-    <lastmod>2024-11-21T14:06:31+02:00</lastmod>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2024-12-02T20:29:01+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-11-21T14:06:31+02:00</lastmod>
+    <lastmod>2024-12-02T20:28:34+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/a/</loc>
-    <lastmod>2024-11-21T10:43:19+02:00</lastmod>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-12-02T20:29:01+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/moods/happy/</loc>
-    <lastmod>2024-11-21T10:43:19+02:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-12-02T20:29:01+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/menu-items/</loc>
+    <lastmod>2024-12-02T20:29:01+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-12-01T22:55:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ze-post/</loc>
+    <lastmod>2024-12-01T22:55:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/title/</loc>
+    <lastmod>2024-12-01T22:54:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/moods/</loc>
-    <lastmod>2024-11-21T10:43:19+02:00</lastmod>
   </url>
 </urlset>

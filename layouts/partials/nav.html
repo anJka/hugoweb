@@ -1,0 +1,65 @@
+<div style="text-align: center; height: 195px; padding:1px;   text-transform:capitalize; background-color:#0e6bb8; color:white">
+  
+           {{ $currentPage := . }}
+           {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+           {{ $page_url}}
+  <nav>
+       <ul>
+         {{ range .Site.Menus.mainmenu }}
+
+          {{ $menu_item_url := .URL | relLangURL }}
+           <li>
+             <a href="{{ .URL }}" {{ if eq $menu_item_url $page_url }}class="active"{{ end }}>
+               {{ .Name }}
+             </a>
+           </li>
+         {{ end }}
+       </ul>
+  </nav>
+</div>
+<nav>
+  <ul>
+    {{ range where .Site.Pages "Section" "menu-items" }}
+      {{ $menu_item_url := .Params.URL | relLangURL }}
+      #
+      {{ if .IsPage }}
+      <li>
+        <a href="{{ .Params.URL }}" {{ if eq $menu_item_url $page_url }}class="active"{{ end }}>{{ .Title }}</a>
+      </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</nav>
+
+<style>
+  
+  nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem; /* Spacing between menu items */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* Default text color */
+  padding: 0.5rem 1rem;
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+/* Active Menu Item */
+nav a.active  {
+  color: #fff; /* Active text color */
+  background-color: #007acc; /* Active background color */
+}
+
+/* Hover Effects */
+nav a:hover {
+  background-color: #f0f0f0;
+  color: #007acc;
+}
+</style>
